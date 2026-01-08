@@ -1,0 +1,44 @@
+RPG Character Builder - Python Solution
+Project Overview
+    This Python project implements a character creation system for a Role-Playing Game (RPG).
+    The application validates character attributes and formats the output according to specific requirements.
+
+Problem Statement
+    Create a function create_character that:
+    - Validates character name and attributes
+    - Returns appropriate error messages for invalid inputs
+    - Formats valid character data into a visual representation
+
+Validation Rules
+    Name Validation
+        - Type Check: Must be a string
+        - Error: "The character name should be a string"
+
+        - Non-empty: Must not be empty
+        - Error: "The character should have a name"
+
+        - Length Limit: Maximum 10 characters
+        - Error: "The character name is too long"
+
+        - No Spaces: Must not contain spaces
+        - Error: "The character name should not contain spaces"
+
+    Stats Validation
+        Integer Check: All stats must be integers
+            - Error: "All stats should be integers"
+            
+            - Minimum Value: All stats must be ≥ 1
+            - Error: "All stats should be no less than 1"
+
+            - Maximum Value: All stats must be ≤ 4
+            - Error: "All stats should be no more than 4"
+
+            - Total Points: Sum of all stats must equal 7
+            - Error: "The character should start with 7 points"
+
+Success Output Format
+    - When all validations pass, return a four-line string:
+    - Character name
+    - Strength stat visualization
+    - Intelligence stat visualization
+    - Charisma stat visualization
